@@ -7,6 +7,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="flattr:id" content="mydy66">
 <title><?php
   /*
    * Print the <title> tag based on what is being viewed.
@@ -32,7 +33,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<link rel="shortcut icon" href="http://smyck.net/favicon.ico" />
+<link rel="shortcut icon" href="//smyck.net/favicon.ico" />
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php bloginfo( 'template_directory' ); ?>/html5.js" type="text/javascript"></script>
