@@ -5,27 +5,27 @@
  */
 ?>
 
-<footer class="row">
-  <div class="column grid_8">
-  </div>
+<footer id="site_footer">
 </footer>
 
-
-<!-- Piwik -->
+<!-- Matomo -->
 <script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.smyck.org/" : "http://stats.smyck.org/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://stats.smyck.org/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
-<!-- End Piwik Tag -->
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.smyck.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
 
 <?php wp_footer(); ?>
 
-
-</body>
+    </body>
 </html>

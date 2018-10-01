@@ -10,39 +10,6 @@
   src: url("/wp-content/themes/wwworld/fonts/AdvertWeb-Light.woff") format("woff");
 }
 
-/* ================ */
-/* = The 1Kb Grid = */     /* 12 columns, 60 pixels each, with 20 pixel gutter */
-/* ================ */
-
-.grid_1 { width:60px; }
-.grid_2 { width:140px; }
-.grid_3 { width:220px; }
-.grid_4 { width:300px; }
-.grid_5 { width:380px; }
-.grid_6 { width:460px; }
-.grid_7 { width:540px; }
-.grid_8 { width:620px; }
-.grid_9 { width:700px; }
-.grid_10 { width:780px; }
-.grid_11 { width:860px; }
-.grid_12 { width:940px; }
-
-.column {
-  margin: 0 10px;
-  overflow: hidden;
-  float: left;
-  display: inline;
-}
-.row {
-  width: 960px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.row .row {
-  margin: 0 -10px;
-  width: auto;
-  display: inline-block;
-}
 
 /* ================ */
 /* =     main     = */
@@ -50,16 +17,101 @@
 
 body {
   background-color: #ffffff;
-  margin-top: 0px;
-  padding-left: 0px;
+  padding: 0px;
   margin: 0px;
 }
 
-#content {
-  width: 500px;
-  padding-left: 60px;
-  padding-right: 60px;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: minmax(auto, 1280px) minmax(220px, 1fr);
+    grid-template-rows: auto 1fr auto;
+
+  }
+}
+
+header#site_header {
+  grid-column: span 2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 1.4em;
+  background-color: #444444;
+  color: white;
+  -moz-box-shadow:0px 5px 7px #c5c5c5;
+  -webkit-box-shadow:0px 5px 7px #c5c5c5;
+  box-shadow:0px 5px 7px #c5c5c5;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+    header#site_header {
+        padding-left: 200px;
+    }
+}
+
+header#site_header h1 {
+  margin: 0px;
+}
+
+header#site_header h1 a {
+  color: #f7f7f7;
+  font-size: 36px;
+  line-height: 36px;
+  text-decoration: none;
+  font-family: AdvertWeb-Light;
+  font-style: normal;
+  font-weight: 100;
+}
+
+header#site_header h2#site-description {
+  font-size: 14px;
+  font-weight: normal;
+  color: #f7f7f7;
+  font-family: "AdvertWeb-Light";
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+
+@media (min-width: 768px) {
+    body > header {
+        padding-left: 200px;
+    }
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding-left: 200px;
+    }
+}
+
+nav {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+footer#site_footer {
+  grid-column: span 2;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #690;
+  color: white;
+}
+
 
 section {
   font-size: 22px;
@@ -68,6 +120,10 @@ section {
   font-style: normal;
   font-weight: 600;
   margin-bottom: 30px;
+}
+
+article header {
+  background-color: #ffffff;
 }
 
 article.post {
@@ -86,12 +142,8 @@ article.post p {
 article.post footer {
   font-size: 12px;
   padding-top: 10px;
-  /*border-top: 1px solid #CCC;*/
 }
 
-footer div.entry-meta {
-  display: block;
-}
 
 iframe {
   border: 0px;
@@ -117,7 +169,6 @@ blockquote {
 }
 
 /* LINKS */
-
 a {
   color: #007faa;
   text-decoration: none;
@@ -145,32 +196,6 @@ h3#comments-title {
   line-height: 34px;
 }
 
-#header h1 {
-  margin: 0px;
-  padding-left: 60px;
-  margin-top: 9px;
-}
-
-#header h1 a {
-  color: #f7f7f7;
-  font-size: 36px;
-  line-height: 36px;
-  text-decoration: none;
-  font-family: AdvertWeb-Light;
-  font-style: normal;
-  font-weight: 100;
-}
-
-#header h2#site-description {
-  font-size: 14px;
-  font-weight: normal;
-  padding-left: 60px;
-  color: #f7f7f7;
-  font-family: "AdvertWeb-Light";
-  font-style: normal;
-  font-weight: normal;
-  margin: 0px;
-}
 
 h1.widget-title {
   color: #444444;
@@ -197,14 +222,6 @@ h1.entry-title, h1.entry-title a {
   transition:         color 0.3s ease;
 }
 
-#header {
-  background-color: #444444;
-  height: 75px;
-  -moz-box-shadow:0px 5px 7px #c5c5c5;
-  -webkit-box-shadow:0px 5px 7px #c5c5c5;
-  box-shadow:0px 5px 7px #c5c5c5;
-  margin-bottom: 60px;
-}
 
 div.entry-meta {
   font-size: 16px;
@@ -249,7 +266,6 @@ footer .column {
 }
 
 /* COMMENTS */
-
 div#comments {
   font-size: 14px;
   line-height: 20px;

@@ -6,15 +6,13 @@
 
 get_header(); ?>
 
-<div class="row">
-  <div class="column grid_8" id="content">
+<main>
     <?php get_template_part( 'loop', 'index' ); ?>
-  </div>
+</main>
 
-  <div class="column grid_3">
-    <?php get_sidebar(); ?>
-  </div>
-</div>
+<nav>
+   <?php get_sidebar(); ?>
+</nav>
 
 <?php get_footer(); ?>
 
