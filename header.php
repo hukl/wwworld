@@ -8,6 +8,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="flattr:id" content="mydy66">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php
   /*
    * Print the <title> tag based on what is being viewed.
