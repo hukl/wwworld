@@ -250,6 +250,8 @@ p.wp-flattr-button {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   margin-left: -5px;
+  max-width: 100%;
+  height: auto;
 }
 
 .entry-content a.thumbs img {
