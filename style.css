@@ -112,27 +112,17 @@ footer#site_footer {
   color: white;
 }
 
-
-section {
-  font-size: 22px;
-  color: #333333;
-  font-family: "calluna-n6","calluna",serif;
-  font-style: normal;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
 article header {
   background-color: #ffffff;
 }
 
 article.post {
   margin-bottom: 80px;
-  font-size: 18px;
-  line-height: 28px;
-  font-family: "calluna-n4","calluna",serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: ff-meta-serif-web-pro, serif;
+  font-weight: 350;
   font-style: normal;
-  font-weight: 400;
 }
 
 article.post p {
@@ -163,9 +153,9 @@ blockquote {
   font-size: 20px;
   line-height: 28px;
   margin-left: 30px;
-  font-family: "calluna",serif;
+  font-family: ff-meta-serif-web-pro, serif;
+  font-weight: 700;
   font-style: italic;
-  font-weight: 600;
 }
 
 /* LINKS */
@@ -185,10 +175,16 @@ a img {
 
 /* HEADLINES */
 
-article.post h2, article.post h3 {
-  font-family: "calluna-n6","calluna",serif;
+h2, h3, h4, h5, h6 {
+  font-family: ff-meta-web-pro, sans-serif;
+  font-weight: 700;
   font-style: normal;
-  font-weight: 600;
+}
+
+article.post h2, article.post h3 {
+  font-family: ff-meta-web-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h3#comments-title {
@@ -200,9 +196,9 @@ h3#comments-title {
 h1.widget-title {
   color: #444444;
   font-weight: normal;
-  font-family: "calluna-sans",sans-serif;
-  font-style: normal;
+  font-family: ff-meta-web-pro, sans-serif;
   font-weight: 700;
+  font-style: normal;
 }
 
 h1.entry-title, h1.entry-title a {
@@ -211,9 +207,9 @@ h1.entry-title, h1.entry-title a {
   color: #333333;
   text-decoration: none;
   margin-bottom: 30px;
-  font-family: "calluna-sans-n9","calluna-sans",sans-serif;
-  font-style: normal;
+  font-family: ff-meta-web-pro, sans-serif;
   font-weight: 900;
+  font-style: normal;
 
   -webkit-transition: color 0.3s ease;
   -moz-transition:    color 0.3s ease;
@@ -271,9 +267,9 @@ footer .column {
 div#comments {
   font-size: 14px;
   line-height: 20px;
-  font-family: "calluna-sans",sans-serif;
+  font-family: ff-meta-serif-web-pro, serif;
+  font-weight: 350;
   font-style: normal;
-  font-weight: 400;
 }
 
 ol.commentlist, ol.commentlist li {
@@ -346,9 +342,9 @@ div#secondary {
   margin-top: 50px;
   font-size: 14px;
   line-height: 16px;
-  font-family: "calluna-sans",sans-serif;
+  font-family: ff-meta-serif-web-pro, serif;
+  font-weight: 350;
   font-style: normal;
-  font-weight: 400;
 }
 
 div#secondary ul {

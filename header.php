@@ -31,6 +31,7 @@
 
   ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" href="https://use.typekit.net/mzd8iqw.css">
 <link rel="stylesheet" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -39,11 +40,6 @@
 <!--[if lt IE 9]>
 <script src="<?php bloginfo( 'template_directory' ); ?>/html5.js" type="text/javascript"></script>
 <![endif]-->
-
-<?php wp_head(); ?>
-  <script src="//use.typekit.net/kcd1kqc.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-</head>
 
 <body <?php body_class('container'); ?>>
   <header id="site_header">
